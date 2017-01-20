@@ -39,6 +39,14 @@ public class LonelyTwitterActivity extends Activity {
 			public void onClick(View v) {
 				setResult(RESULT_OK);
 				String text = bodyText.getText().toString();
+
+				Mood mood = new Happy();
+
+				ArrayList<Mood> moodList = new ArrayList<Mood>();
+				moodList.add(mood);
+
+				mood.showMood();
+
 				saveInFile(text, new Date(System.currentTimeMillis()));
 				finish();
 
