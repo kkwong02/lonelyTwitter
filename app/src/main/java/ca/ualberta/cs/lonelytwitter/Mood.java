@@ -3,6 +3,11 @@ package ca.ualberta.cs.lonelytwitter;
 import java.util.Date;
 
 /**
+ * This is an abstract class that stores the user's mood. The class provides methods that allow
+ * the creation and modification of the date of the mood.
+ *
+ * @see Happy
+ * @see Sad
  * Created by kirsten on 1/19/17.
  */
 
@@ -25,7 +30,5 @@ public abstract class Mood {
         this.date = date;
     }
 
-    public String showMood(){
-        return null;
-    }
+    public abstract String showMood();
 }
